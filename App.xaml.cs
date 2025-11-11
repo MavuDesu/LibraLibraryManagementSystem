@@ -13,5 +13,12 @@ namespace LibraLibraryManagementSystem
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            var login = new LoginForm(); // ensure namespace is correct
+            login.Show();
+            // optionally close the app when login closes or show MainWindow afterward
+        }
     }
 }

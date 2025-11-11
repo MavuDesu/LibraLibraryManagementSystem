@@ -54,5 +54,22 @@ namespace LibraLibraryManagementSystem
         {
             WindowState = WindowState.Minimized;
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            var user = (txtUsername.Text ?? string.Empty).Trim();
+            var pass = (txtPassword.Password ?? string.Empty).Trim();
+
+            if (user == "admin" && pass == "admin")
+            {
+                var main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password.", "Login failed", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
     }
 }

@@ -9,7 +9,6 @@
         Width="1000"
         WindowStyle="None"
         WindowState="Maximized"
-        
         ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -88,26 +87,25 @@
                             Height="50"/>
 
                     <PasswordBox x:Name="txtPassword"
-             FontFamily="Montserrat"
-             FontSize="14" 
-             BorderThickness="0"
-             Background="Transparent"
-             Padding="20,0"
-             VerticalAlignment="Center"
-             Foreground="#333333"
-             PasswordChanged="txtPassword_PasswordChanged"/>
+                                 FontFamily="Montserrat"
+                                 FontSize="14"
+                                 BorderThickness="0"
+                                 Background="Transparent"
+                                 Padding="20,0"
+                                 VerticalAlignment="Center"
+                                 Foreground="#333333"
+                                 PasswordChanged="txtPassword_PasswordChanged"/>
 
                     <TextBlock x:Name="tbPasswordPlaceholder"
-           Text="Password"
-           FontFamily="Montserrat"
-           FontSize="14"
-           Foreground="#AAAAAA"
-           Margin="20,0"
-           IsHitTestVisible="False"
-           VerticalAlignment="Center">
+                               Text="Password"
+                               FontFamily="Montserrat"
+                               FontSize="14"
+                               Foreground="#AAAAAA"
+                               Margin="20,0"
+                               IsHitTestVisible="False"
+                               VerticalAlignment="Center">
                     </TextBlock>
                 </Grid>
-
                 <Button Content="Log In"
                         x:Name="btnLogin"
                         FontFamily="Montserrat"
@@ -116,13 +114,14 @@
                         Foreground="White"
                         Background="#FFE4A750"
                         BorderThickness="0"
-                        Height="50"
-                        Cursor="Hand">
+                        Height="44"
+                        Cursor="Hand"
+                        Click="btnLogin_Click">
                     <Button.Style>
-                        <Style TargetType="Button">
+                        <Style TargetType="{x:Type Button}">
                             <Setter Property="Template">
                                 <Setter.Value>
-                                    <ControlTemplate TargetType="Button">
+                                    <ControlTemplate TargetType="{x:Type Button}">
                                         <Border Background="{TemplateBinding Background}"
                                                 CornerRadius="25">
                                             <ContentPresenter HorizontalAlignment="Center"
@@ -151,8 +150,6 @@
                     <GradientStop Color="#4A90C2" Offset="1.0" />
                 </LinearGradientBrush>
             </Grid.Background>
-
-
 
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Bottom"

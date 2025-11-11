@@ -20,7 +20,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0"
-                    Background="{DynamicResource SecundaryBackgroundColor}"
+                    Background="{DynamicResource SecondaryBackgroundColor}"
                     CornerRadius="8 0 0 8">
                 <Grid x:Name="GridNav" Width="60">
                     <Grid.RowDefinitions>
@@ -63,7 +63,7 @@
                     </StackPanel>
 
                     <Popup x:Name="Popup"  AllowsTransparency="True"  HorizontalOffset="0" VerticalOffset="10">
-                        <ctls:UserPopup x:Name="Header" Foreground="{DynamicResource PrimaryTextColor}"/>
+                        <ctls:UserPopup x:Name="Header" Foreground="{DynamicResource TextSecondaryColor}"/>
                     </Popup>
 
                 </Grid>
