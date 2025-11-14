@@ -32,7 +32,7 @@
                         <Border 
                               Margin="0,8,0,8"
                               Width="60"
-                              HorizontalAlignment="Center">
+                              HorizontalAlignment="Left">
                             <Border.Background>
                                 <ImageBrush ImageSource="/logo.png" Stretch="Uniform"/>
                             </Border.Background>
@@ -41,8 +41,8 @@
                         <Label Content="LIBRA"
                                Foreground="{DynamicResource TextSecondaryColor}"
                                FontWeight="Bold"
-                               FontSize="24"
-                               VerticalAlignment="Center"
+                               FontSize="38"
+                               VerticalAlignment="Bottom"
                                HorizontalAlignment="Left"
                                Margin="60 0 0 0"/>
                     </Grid>

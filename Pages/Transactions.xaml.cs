@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace LibraLibraryManagementSystem.Pages
 {
     /// <summary>
-    /// Lógica de interacción para Home.xaml
+    /// Lógica de interacción para Dashboard.xaml
     /// </summary>
-    public partial class Home : Page
+    public partial class Transactions : Page
     {
-        public Home()
+        public Transactions()
         {
             InitializeComponent();
         }

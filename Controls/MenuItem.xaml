@@ -31,13 +31,13 @@
         
         <!-- Start: Menu Icon Style -->
         <Style x:Key="MenuIconStyle" TargetType="{x:Type Path}">
-            <Setter Property="Fill" Value="{DynamicResource SecundaryIconColor}"/>
+            <Setter Property="Fill" Value="White"/>
             <Style.Triggers>
                 <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Fill" Value="{DynamicResource TextFourthColor}"/>
+                    <Setter Property="Fill" Value="White"/>
                 </DataTrigger>
                 <DataTrigger Binding="{Binding IsChecked, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Fill" Value="{DynamicResource PrimaryBlueColor}"/>
+                    <Setter Property="Fill" Value="White"/>
                 </DataTrigger>
             </Style.Triggers>
         </Style>
@@ -45,17 +45,17 @@
         
         <!-- Start: Menu Text Style -->
         <Style x:Key="MenuTextStyle" TargetType="{x:Type TextBlock}">
-            <Setter Property="Foreground" Value="{DynamicResource SecundaryIconColor}"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="FontWeight" Value="Regular"/>
             <Setter Property="Margin" Value="18 0 0 0"/>
             <Style.Triggers>
                 <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Foreground" Value="{DynamicResource TextFourthColor}"/>
+                    <Setter Property="Foreground" Value="{DynamicResource TextSecondaryColor}"/>
                 </DataTrigger>
                 <DataTrigger Binding="{Binding IsChecked, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ToggleButton}}" Value="True">
-                    <Setter Property="Foreground" Value="{DynamicResource PrimaryBlueColor}"/>
+                    <Setter Property="Foreground" Value="{DynamicResource TextSecondaryColor}"/>
                 </DataTrigger>
             </Style.Triggers>
         </Style>

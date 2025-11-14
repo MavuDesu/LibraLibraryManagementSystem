@@ -108,17 +108,17 @@ namespace LibraLibraryManagementSystem
 
         private void btnBooks_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Add your logic for the Users button click here
+            fContainer.Navigate(new System.Uri("Pages/Books.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void btnUsers_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Add your logic for the Users button click here
+            fContainer.Navigate(new System.Uri("Pages/Users.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void btnTransactions_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Add your logic for the Users button click here
+            fContainer.Navigate(new System.Uri("Pages/Transactions.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void MenuItem_Loaded(object sender, RoutedEventArgs e)
