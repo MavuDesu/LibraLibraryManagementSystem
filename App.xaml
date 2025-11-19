@@ -13,7 +13,21 @@
 
                 <ResourceDictionary Source="Styles/MainStyle.xaml"/>
 
+                
             </ResourceDictionary.MergedDictionaries>
+            
+            <SolidColorBrush x:Key="PrimaryBlue" Color="#30475E"/>
+            <SolidColorBrush x:Key="DarkBackground" Color="#222831"/>
+            <SolidColorBrush x:Key="LightBackground" Color="#F5F5F5"/>
+            <SolidColorBrush x:Key="DarkText" Color="#333333"/>
+            <SolidColorBrush x:Key="AccentGreen" Color="#68D259"/>
+            <SolidColorBrush x:Key="AccentOrange" Color="#DBA41B"/>
+            <SolidColorBrush x:Key="AccentRed" Color="#E53935"/>
+            <SolidColorBrush x:Key="ButtonGray" Color="#544E4E"/>
+            <SolidColorBrush x:Key="TextGray" Color="#666666"/>
+            <SolidColorBrush x:Key="BorderGray" Color="#CCCCCC"/>
+
+            <FontFamily x:Key="DefaultFont">Segoe UI</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

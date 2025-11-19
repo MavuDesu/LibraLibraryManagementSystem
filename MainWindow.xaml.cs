@@ -113,7 +113,8 @@ namespace LibraLibraryManagementSystem
 
         private void btnUsers_Click(object sender, RoutedEventArgs e)
         {
-            fContainer.Navigate(new System.Uri("Pages/Users.xaml", UriKind.RelativeOrAbsolute));
+            // Use 'fContainer' (the Leader's frame) to navigate to your Page object
+            fContainer.Navigate(new LibraLibraryManagementSystem.Pages.Users());
         }
 
         private void btnTransactions_Click(object sender, RoutedEventArgs e)
@@ -124,6 +125,21 @@ namespace LibraLibraryManagementSystem
         private void MenuItem_Loaded(object sender, RoutedEventArgs e)
         {
             // initialization code here
+        }
+
+        private void MenuItem_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Loaded_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Loaded_3(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -6,10 +6,131 @@
       xmlns:local="clr-namespace:LibraLibraryManagementSystem.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Users">
+      Title="Users"
+      Background="White">
 
-    <Border CornerRadius="5" Background="{DynamicResource PrimaryBackgroundColor}">
-        <TextBlock Text="Users" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold"
-                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
-    </Border>
+    <Grid Background="White">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" 
+            Background="{StaticResource PrimaryBlue}" 
+            CornerRadius="8" 
+            Margin="10,10,10,10"  
+            Height="40">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="txtSearch" 
+                 Text="Search for a user..."
+                 Grid.Column="0"
+                 Background="#445D7A"
+                 BorderThickness="0" 
+                 Foreground="White" 
+                 VerticalAlignment="Center"
+                 Padding="10,0"/>
+
+                <Button Content="&#xE721;" 
+                Grid.Column="1"
+                Background="Transparent" 
+                BorderThickness="0" 
+                Foreground="White"
+                FontSize="16"
+                Padding="10,0"
+                VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <Label Grid.Row="1" 
+               Name="lblAdmin" 
+               Content="ADMIN" 
+               FontWeight="Bold" 
+               FontSize="16" 
+               Margin="10,10,0,0"/>
+
+        <DataGrid Grid.Row="2" 
+          Name="dgAdmins" 
+          AutoGenerateColumns="False" 
+          IsReadOnly="True"
+
+          Background="White"
+          BorderThickness="0"
+          RowHeaderWidth="0"           
+          GridLinesVisibility="Horizontal"  
+          HeadersVisibility="Column"
+          CanUserResizeColumns="False"
+          CanUserSortColumns="False"
+          AlternatingRowBackground="#F9F9F9">```
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="School ID" Binding="{Binding SchoolID}" />
+                <DataGridTextColumn Header="Role" Binding="{Binding Role}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Contact No." Binding="{Binding ContactNo}" />
+                <DataGridTextColumn Header="Password" Binding="{Binding Password}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Grid.Row="3" 
+               Name="lblStudents" 
+               Content="STUDENTS" 
+               FontWeight="Bold" 
+               FontSize="16" 
+               Margin="0,10,0,0"/>
+        <DataGrid Grid.Row="4" 
+          Name="dgStudents" 
+          AutoGenerateColumns="False" 
+          IsReadOnly="True"
+
+          Background="White"
+          BorderThickness="0"
+          RowHeaderWidth="0"
+          GridLinesVisibility="Horizontal"
+          HeadersVisibility="Column"
+          CanUserResizeColumns="False"
+          CanUserSortColumns="False"
+          AlternatingRowBackground="#F9F9F9">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="School ID" Binding="{Binding SchoolID}" />
+                <DataGridTextColumn Header="Grade and Section" Binding="{Binding GradeSection}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Contact No." Binding="{Binding ContactNo}" />
+                <DataGridTextColumn Header="Password" Binding="{Binding Password}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="5" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Left" 
+                    Margin="10,20,0,10">
+            <Button Name="btnAddUser" 
+                    Content="ADD USER" 
+                    Margin="0,0,10,0"
+                    Background="{StaticResource AccentGreen}"
+                    Click="btnAddUser_Click"
+                    Height="35" MinWidth="100"/>
+            <Button Name="btnEditUser" 
+                    Content="EDIT" 
+                    Margin="0,0,10,0"
+                    Background="{StaticResource AccentOrange}"
+                    Click="btnEditUser_Click"
+                    Height="35" MinWidth="100"/>
+            <Button Name="btnDeleteUser" 
+                    Content="DELETE"
+                    Background="{StaticResource AccentRed}"
+                    Click="btnDeleteUser_Click"
+                    Height="35" MinWidth="100"/>
+        </StackPanel>
+    </Grid>
 </Page>

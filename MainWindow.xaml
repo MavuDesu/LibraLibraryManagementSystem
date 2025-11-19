@@ -49,16 +49,16 @@
 
                     <StackPanel Grid.Row="1" Margin="-1 40 0 20">
                         <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Dashboard" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Dashboard" VerticalAlignment="Center" Loaded="MenuItem_Loaded_3"/>
                         </Button>
                         <Button x:Name="btnBooks" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnBooks_MouseEnter" MouseLeave="btnBooks_MouseLeave" Click="btnBooks_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource books}" IconWidth="16" Text="Books" VerticalAlignment="Center" BorderBrush="White" Loaded="MenuItem_Loaded"/>
                         </Button>
                         <Button x:Name="btnUsers" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnUsers_MouseEnter" MouseLeave="btnUsers_MouseLeave" Click="btnUsers_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource users}" IconWidth="16" Text="Users" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource users}" IconWidth="16" Text="Users" VerticalAlignment="Center" Loaded="MenuItem_Loaded_1"/>
                         </Button>
                         <Button x:Name="btnTransactions" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnTransactions_MouseEnter" MouseLeave="btnTransactions_MouseLeave" Click="btnTransactions_Click">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource transactions}" IconWidth="16" Text="Transactions" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="White" Icon="{DynamicResource transactions}" IconWidth="16" Text="Transactions" VerticalAlignment="Center" Loaded="MenuItem_Loaded_2"/>
                         </Button>
                     </StackPanel>
 
